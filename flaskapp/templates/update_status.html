@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+	{% block block_name_content %}
+		<div class="content-section">	
+			<form method="POST" action="">
+				{{ form.hidden_tag() }}
+				<fieldset class="form-group">
+					<legend>Update Status</legend>
+					
+					
+					<div class="form-group">
+                                	        {{ form.av_status.label(class="form-control-label") }}
+                                        	{% if form.av_status.errors %}
+						
+	                                                {{ form.av_status(class="form-control form-control-lg is-invalid") }}
+							<div class="invalid-feedback">
+								{% for error in form.av_status.errors %}
+									<span> {{ error }} </span>					
+								{% endfor %}			
+							</div>
+						{% else %}
+							{{ form.av_status(class="form-control form-control-lg") }}
+						{% endif %}
+	                                </div>
+	
+					
+					
+					
+				</fieldset>
+				<div class="form-group  pt-3">
+					{{ form.submit(class="btn btn-outline-info")}}
+				</div>
+			
+			</form>
+		</div>
+	{% endblock %}

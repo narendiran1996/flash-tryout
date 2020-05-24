@@ -1,0 +1,21 @@
+# this is for ELECTRONIC PRODUCT DESIGN LAB
+# install requirements
+# add environment variable if required for EMAIL_USERNAME and EMAIL_PASSWORD
+# to run first, go to virual env by 'source Flask_env/bin/activate'
+# to run 'python run.py'
+
+# create database for first time
+#	1) open python
+#	2) 'from flaskapp import db'
+#	3) db.create_all()
+
+# to check the users in database
+# open python
+# 'from flaskapp import db'
+# 'from flaskapp.models import User' 
+
+
+# to delete database	
+#	1) open python
+#	2) 'from flaskapp import db'
+#	3) db.drop_all()
